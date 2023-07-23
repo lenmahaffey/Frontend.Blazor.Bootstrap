@@ -1,5 +1,6 @@
 using Blazor.Frontend;
 using Blazor.Frontend.Services;
+using BlazorBootstrap;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 
@@ -10,7 +11,7 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 //builder.Services.AddHttpClient<IMeetingPlannerApiService, MeetingPlannerApiService>(client =>
 //    client.BaseAddress = new Uri("http://localhost:5001"));
 
-
+builder.Services.AddBlazorBootstrap();
 builder.Services.AddScoped<NotificationService>();
 builder.Services.AddScoped<AlertService>();
 

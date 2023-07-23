@@ -27,6 +27,7 @@ namespace Blazor.Frontend.Components.D3
         {
             _js = await Js!.InvokeAsync<IJSObjectReference>("import", "./Components/D3/Barchart.razor.js");
             await _js.InvokeVoidAsync("DrawBarChart", data);
+            StateHasChanged();
         }
     }
 }

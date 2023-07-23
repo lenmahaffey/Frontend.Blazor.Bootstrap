@@ -1,4 +1,12 @@
-﻿svg {
+﻿@import "../../_theme.scss";
+
+#barChart {
     height: 100%;
     width: 100%;
+}
+
+#barchart text{
+    stroke: red;
+    stroke-linejoin: round;
+    fill: $mmRed;
 }

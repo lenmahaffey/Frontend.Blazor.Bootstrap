@@ -11,6 +11,8 @@
     const chart = svg.append('g')
         .attr('transform', `translate(${margin}, ${margin})`);
 
+    const css = svg.append('style')
+        .attr("type", "text/css")
     const xScale = d3.scaleBand()
         .range([0, width])
         .domain(data.map((s) => s.name))
@@ -58,6 +60,7 @@
     barGroups
         .append('rect')
         .attr('class', 'bar')
+/*        .attr('fill', 'white')*/
         .attr('x', (g) => xScale(g.name))
         .attr('y', (g) => yScale(g.value))
         .attr('height', (g) => height - yScale(g.value))
@@ -147,7 +150,7 @@
 
     svg.append('text')
         .attr('class', 'source')
-        .attr('x', width - margin / 2)
+        .attr('x', width - margin * 3) 
         .attr('y', height + margin * 1.7)
         .attr('text-anchor', 'start')
         .text('Source: Stack Overflow, 2018')
