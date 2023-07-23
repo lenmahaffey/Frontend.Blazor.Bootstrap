@@ -1,4 +1,6 @@
 ﻿export function calulatePageHeight() {
-    $(".mainBodyContainer").height($('.leftBar').height() - 15);
+    let leftBarHeight = $('.leftBar').height()
+    console.log(leftBarHeight)
+    $(".mainBody").height(leftBarHeight);
     return result
 }
