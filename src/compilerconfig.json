@@ -58,5 +58,9 @@
   {
     "outputFile": "Pages/Graphs.razor.css",
     "inputFile": "Pages/Graphs.razor.scss"
+  },
+  {
+    "outputFile": "Components/D3/BarChart.razor.css",
+    "inputFile": "Components/D3/BarChart.razor.scss"
   }
 ]
