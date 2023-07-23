@@ -1,7 +1,6 @@
 ﻿using Blazor.Frontend.Classes;
 using Blazor.Frontend.Services;
 using Microsoft.AspNetCore.Components;
-
 namespace Blazor.Frontend.Shared
 {
     public partial class AlertContainer
