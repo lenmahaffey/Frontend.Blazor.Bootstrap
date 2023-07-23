@@ -54,5 +54,9 @@
   {
     "outputFile": "Shared/AlertContainer.razor.css",
     "inputFile": "Shared/AlertContainer.razor.scss"
+  },
+  {
+    "outputFile": "Pages/Graphs.razor.css",
+    "inputFile": "Pages/Graphs.razor.scss"
   }
 ]
