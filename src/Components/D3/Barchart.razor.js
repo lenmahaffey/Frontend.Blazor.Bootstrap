@@ -1,12 +1,12 @@
 ﻿export function DrawBarChart(data) {
     const svg = d3.select('svg');
 
-    let parentHeight = $(this).height()
+    let parentHeight = $("svg").height()
     console.log(parentHeight);
 
     const margin = 50;
-    const width = 1000 - 2 * margin;
-    const height = 750 - 2 * margin;
+    const width = $("svg").width() - 2 * margin;
+    const height = $("svg").height() - 2 * margin;
 
     const chart = svg.append('g')
         .attr('transform', `translate(${margin}, ${margin})`);
