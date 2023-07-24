@@ -8,7 +8,7 @@ namespace Blazor.Frontend.Components.D3
     {
         [Inject] public IJSRuntime? Js { get; set; }
         private IJSObjectReference? _js;
-
+        ElementReference svg;
         private List<BarChartData> data { get; set; } = 
             new List<BarChartData> 
             {
@@ -26,7 +26,12 @@ namespace Blazor.Frontend.Components.D3
         protected async override Task OnInitializedAsync()
         {
             _js = await Js!.InvokeAsync<IJSObjectReference>("import", "./Components/D3/Barchart.razor.js");
-            await _js.InvokeVoidAsync("DrawBarChart", data);
+            await _js.InvokeVoidAsync("DrawBarChart", data, DotNetObjectReference.Create(this));
+        }
+
+        [JSInvokable("ChartHasRendered")]
+        public void ChartHasRendered()
+        {
             StateHasChanged();
         }
     }

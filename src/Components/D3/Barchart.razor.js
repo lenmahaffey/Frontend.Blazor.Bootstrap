@@ -1,4 +1,4 @@
-﻿export function DrawBarChart(data) {
+﻿export function DrawBarChart(data, dotnet) {
     const svg = d3.select('svg');
 
     let parentHeight = $("svg").height()
@@ -11,8 +11,11 @@
     const chart = svg.append('g')
         .attr('transform', `translate(${margin}, ${margin})`);
 
-    const css = svg.append('style')
+
+    const style = svg.append('style')
         .attr("type", "text/css")
+        .text(".bar { fill: red; }")
+
     const xScale = d3.scaleBand()
         .range([0, width])
         .domain(data.map((s) => s.name))
@@ -154,4 +157,6 @@
         .attr('y', height + margin * 1.7)
         .attr('text-anchor', 'start')
         .text('Source: Stack Overflow, 2018')
+
+    dotnet.invokeMethodAsync('ChartHasRendered');
 }
