@@ -14,7 +14,17 @@
 
     const style = svg.append('style')
         .attr("type", "text/css")
-        .text(".bar { fill: red; }")
+        .text(".bar { fill: red; \
+                      stroke: black;\
+                      stroke-width: 2px;\
+                      stroke-linejoin: round; }\
+               #xAxis .tick text { text-anchor: end;\
+                                   font-size: 16px; }\
+               #yAxis .tick text { text-anchor: end;\
+                                   font-size: 16px; }\
+               .bar + text { fill: black;\
+                             font-size: x-large;}\
+               .tick line{ stroke-opacity: .3;}")
 
     const xScale = d3.scaleBand()
         .range([0, width])
@@ -63,7 +73,6 @@
     barGroups
         .append('rect')
         .attr('class', 'bar')
-/*        .attr('fill', 'white')*/
         .attr('x', (g) => xScale(g.name))
         .attr('y', (g) => yScale(g.value))
         .attr('height', (g) => height - yScale(g.value))
@@ -124,7 +133,7 @@
         .append('text')
         .attr('class', 'value')
         .attr('x', (a) => xScale(a.name) + xScale.bandwidth() / 2)
-        .attr('y', (a) => yScale(a.value) + 30)
+        .attr('y', (a) => yScale(a.value + 1))
         .attr('text-anchor', 'middle')
         .text((a) => `${a.value}%`)
 
