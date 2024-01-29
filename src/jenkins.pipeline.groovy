@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Clone Repository') {
             steps {
-                git credentialsId: 'personal', url: 'git@github.com:lenmahaffey/frontend.blazor.bootstrap.git'
+                git credentialsId: 'github', url: 'git@github.com:lenmahaffey/frontend.blazor.bootstrap.git'
             }
         }
         

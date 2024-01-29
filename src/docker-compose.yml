@@ -3,10 +3,13 @@ services:
   meetingmanager:
     container_name: blazor
     hostname: blazor
-    image: docker.lenmahaffey.com/frontend.blazor.bootstrap:latest
+    image: docker.lenmahaffey.com/frontend-blazor-bootstrap:latest
     restart: unless-stopped
     ports:
     - "5050:5050"
+    environment:
+        - ASPNETCORE_URLS="http://localhost:5050"
+        - ASPNETCORE_ENVIRONMENT=Production
     networks:
       local:
         ipv4_address: 10.5.0.14

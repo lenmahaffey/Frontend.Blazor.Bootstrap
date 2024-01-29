@@ -4,6 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>88ff6e25-3f44-4efd-967c-3276c04fbffe</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,6 +22,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Deploy\" />
+    <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="wwwroot\css\" />
   </ItemGroup>
 
