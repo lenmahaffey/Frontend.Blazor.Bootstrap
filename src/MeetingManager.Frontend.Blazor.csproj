@@ -24,5 +24,9 @@
     <Folder Include="wwwroot\css\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\MeetingManager.Library\src\MeetingManager.Library.csproj" />
+  </ItemGroup>
+
 
 </Project>
