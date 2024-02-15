@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Frontend.Blazor.Bootstrap.Classes
+namespace MeetingManager.Frontend.Blazor.Classes
 {
     public class Message
     {

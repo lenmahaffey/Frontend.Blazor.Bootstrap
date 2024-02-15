@@ -1,8 +1,8 @@
-﻿using Frontend.Blazor.Bootstrap.Classes;
-using Frontend.Blazor.Bootstrap.Services;
+﻿using MeetingManager.Frontend.Blazor.Classes;
+using MeetingManager.Frontend.Blazor.Services;
 using Microsoft.AspNetCore.Components;
 
-namespace Frontend.Blazor.Bootstrap.Areas.Demo
+namespace MeetingManager.Frontend.Blazor.Areas.Demo
 {
     public partial class Demo
     {

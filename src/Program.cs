@@ -1,5 +1,5 @@
-using Frontend.Blazor.Bootstrap;
-using Frontend.Blazor.Bootstrap.Services;
+using MeetingManager.Frontend.Blazor;
+using MeetingManager.Frontend.Blazor.Services;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 

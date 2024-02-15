@@ -1,6 +1,6 @@
-﻿using Frontend.Blazor.Bootstrap.Classes;
+﻿using MeetingManager.Frontend.Blazor.Classes;
 
-namespace Frontend.Blazor.Bootstrap.Services
+namespace MeetingManager.Frontend.Blazor.Services
 {
     public class AlertService
     {

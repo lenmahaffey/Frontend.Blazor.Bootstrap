@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 
-namespace Frontend.Blazor.Bootstrap.Layout
+namespace MeetingManager.Frontend.Blazor.Layout
 {
     public partial class MainLayout
     {

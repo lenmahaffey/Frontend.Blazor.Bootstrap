@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components;
 
-namespace Frontend.Blazor.Bootstrap.Classes
+namespace MeetingManager.Frontend.Blazor.Classes
 {
     public class ToolTipOptions
     {

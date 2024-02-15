@@ -1,7 +1,7 @@
-﻿using Frontend.Blazor.Bootstrap.Classes;
+﻿using MeetingManager.Frontend.Blazor.Classes;
 using Microsoft.AspNetCore.Components;
 
-namespace Frontend.Blazor.Bootstrap.Services
+namespace MeetingManager.Frontend.Blazor.Services
 {
     public class AppStateService
     {

@@ -1,9 +1,9 @@
-﻿using Frontend.Blazor.Bootstrap.Classes;
-using Frontend.Blazor.Bootstrap.Services;
+﻿using MeetingManager.Frontend.Blazor.Classes;
+using MeetingManager.Frontend.Blazor.Services;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 
-namespace Frontend.Blazor.Bootstrap.Layout.Components
+namespace MeetingManager.Frontend.Blazor.Layout.Components
 {
     public partial class LeftSideBar : IDisposable
     {

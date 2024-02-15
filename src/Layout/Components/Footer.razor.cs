@@ -1,4 +1,4 @@
-﻿namespace Frontend.Blazor.Bootstrap.Layout.Components
+﻿namespace MeetingManager.Frontend.Blazor.Layout.Components
 {
     public partial class Footer
     {

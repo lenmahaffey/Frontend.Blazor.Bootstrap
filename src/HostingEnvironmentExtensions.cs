@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 
-namespace Frontend.Blazor.Bootstrap
+namespace MeetingManager.Frontend.Blazor
 {
     public static class HostingEnvironmentExtensions
     {

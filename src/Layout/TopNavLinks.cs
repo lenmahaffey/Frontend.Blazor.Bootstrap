@@ -1,6 +1,6 @@
-﻿using Frontend.Blazor.Bootstrap.Classes;
+﻿using MeetingManager.Frontend.Blazor.Classes;
 
-namespace Frontend.Blazor.Bootstrap.Layout
+namespace MeetingManager.Frontend.Blazor.Layout
 {
     public class TopNavLinks
     {

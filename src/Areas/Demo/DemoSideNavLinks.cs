@@ -1,6 +1,6 @@
-﻿using Frontend.Blazor.Bootstrap.Classes;
+﻿using MeetingManager.Frontend.Blazor.Classes;
 
-namespace Frontend.Blazor.Bootstrap.Areas.Demo
+namespace MeetingManager.Frontend.Blazor.Areas.Demo
 {
     public static class DemoSideNavLinks
     {
