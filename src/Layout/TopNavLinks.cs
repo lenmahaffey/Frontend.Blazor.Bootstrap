@@ -10,33 +10,10 @@ namespace MeetingManager.Frontend.Blazor.Layout
                 {
                     new NavLinkGroup()
                     {
-                        Title = "Area 1",
+                        Title = "Contacts",
                         Links = new List<NavLink>()
                         {
-                            new NavLink() { Label = "Area 1 Link 1", Href = "/"}
-                        },
-                    }
-                },
-                {
-                    new NavLinkGroup()
-                    {
-                        Title = "Area 2",
-                        Links = new List<NavLink>()
-                        {
-                            new NavLink(){ Label = "Area 2 Link 1", Href = "/"},
-                            new NavLink(){ Label = "Area 2 Link 2", Href = "/"},
-                        },
-                    }
-                },
-                {
-                    new NavLinkGroup()
-                    {
-                        Title = "Area 3",
-                        Links = new List<NavLink>()
-                        {
-                            new NavLink(){ Label = "Area 3 Link 1", Href = "/"},
-                            new NavLink(){ Label = "Area 3 Link 2", Href = "/"},
-                            new NavLink(){ Label = "Area 3 Link 3", Href = "/"},
+                            new NavLink() { Label = "Contacts", Href = "/contacts"}
                         },
                     }
                 },
